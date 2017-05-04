@@ -1,18 +1,10 @@
 {
-  "name": "apidoc-example",
-  "version": "0.3.0",
-  "description": "apidoc example project",
-  "title": "Custom apiDoc browser title",
-  "url" : "https://api.github.com/v1",
-  "sampleUrl": "https://api.github.com/v1",
-  "header": {
-    "title": "My own header title",
-    "filename": "header.md"
-  },
-  "footer": {
-    "title": "My own footer title",
-    "filename": "footer.md"
-  },
+  "name": "First API Project",
+  "version": "0.0.1",
+  "description": "First Project Details",
+  "title": "First Project",
+  "url" : "http://base.dev/api/",
+  "sampleUrl": "http://base.dev/api/",
   "template": {
   	"withCompare": true,
   	"withGenerator": true
