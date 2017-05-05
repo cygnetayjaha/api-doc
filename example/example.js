@@ -77,3 +77,84 @@
     }
 ]
  */
+
+////////////////////////////////////////////////////////////////////////
+
+/**
+ * @api {post} events/edit/ Edit Event
+ * @apiName editEvent
+ * @apiGroup Event
+ *
+ * @apiParam (Event) {number} event_id Event Id Required
+ * @apiParam (Event) {string} name Event Name Required
+ * @apiParam (Event) {string} title Event Title Required
+ * @apiParam (Event) {number} user_id User Id
+ * @apiParam (Event) {date} start_date Event Start Date
+ * @apiParam (Event) {date} end_date Event End Date
+ * 
+ * @apiSuccessExample Success-Response:
+	[
+    {
+        "data": {
+            "eventId": 4,
+            "eventName": "F Tets Event - API",
+            "eventTitle": "random title for events",
+            "eventStartDate": "05-05-2017",
+            "eventEndDate": "05-05-2017"
+        },
+        "status": true,
+        "message": "Event is Edited Successfully",
+        "code": 200
+    }
+]
+ * 
+ *
+ *
+ * @apiErrorExample Error-Response:
+	[
+    {
+        "error": {
+            "reason": "Invalid Inputs"
+        },
+        "status": false,
+        "message": "Something went wrong !",
+        "code": 400
+    }
+]
+ */
+
+////////////////////////////////////////////////////////////////////////
+
+/**
+ * @api {post} events/delete/ Delete Event
+ * @apiName deleteEvent
+ * @apiGroup Event
+ *
+ * @apiParam (Event) {number} event_id Event Id Required
+ * 
+ * @apiSuccessExample Success-Response:
+	[
+    {
+        "data": {
+            "success": "Event Deleted"
+        },
+        "status": true,
+        "message": "Event is Deleted Successfully",
+        "code": 200
+    }
+]
+ * 
+ *
+ *
+ * @apiErrorExample Error-Response:
+	[
+    {
+        "error": {
+            "reason": "Invalid Inputs"
+        },
+        "status": false,
+        "message": "Something went wrong !",
+        "code": 404
+    }
+]
+ */
